@@ -1,7 +1,29 @@
 aid: elemental
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/elemental.png
 name: Elemental
-description: Elemental is a company surfaced as a portfolio company of general-catalyst and added to the
-  API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Elemental (Elemental Technologies) was a Portland, Oregon video encoding and
+  multiscreen delivery company founded in 2006 and backed by General Catalyst.
+  Its software powered large over-the-top and broadcast video providers before
+  Amazon Web Services acquired the company in 2015. The business now operates as
+  the AWS Elemental brand within AWS Media Services, spanning cloud services
+  (MediaConvert, MediaLive, MediaPackage, MediaConnect, MediaStore, MediaTailor)
+  and on-premises appliances and software (Elemental Live, Elemental Server,
+  Elemental Conductor, Elemental Statmux, Elemental Link). Elemental no longer
+  operates an independent developer portal; its API surface is delivered through
+  AWS SDKs and the AWS Elemental documentation. This profile was surfaced as a
+  General Catalyst portfolio company; the investment exited via acquisition.
 url: https://raw.githubusercontent.com/api-evangelist/elemental/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,14 +31,43 @@ x-backed-by:
 - general-catalyst
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: acquired
+x-acquired-by: amazon-web-services
+x-acquired-year: 2015
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Video
+- Video Encoding
+- Media Services
+- Streaming
+- Transcoding
+- Broadcast
+- AWS
+- Acquired
 apis: []
+common:
+- type: Website
+  url: https://aws.amazon.com/media-services/elemental
+  name: AWS Elemental (elemental.com redirects here)
+- type: Documentation
+  url: https://docs.aws.amazon.com/elemental-appliances-software/latest/ug/
+  name: AWS Elemental Appliances and Software User Guide
+- type: APIReference
+  url: https://d1.awsstatic.com/awselemental/api-userguide/Live_API-User-Guide.pdf
+  name: Elemental Live REST API and User Guide
+- type: Blog
+  url: https://aws.amazon.com/blogs/media/
+  name: AWS Media & Entertainment Blog
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
